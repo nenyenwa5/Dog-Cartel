@@ -51,7 +51,7 @@
 <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Last Name">
 </div>
 </div>
-<div class="col-md-6 mb-0">
+<div class="col-md-6 mb-0">   
 <div class="mb-3">
 <input type="text" name="email" id="email" class="form-control" placeholder="Your Email">
 </div>
