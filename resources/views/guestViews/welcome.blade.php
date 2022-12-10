@@ -67,10 +67,9 @@
                     </div>
                     <div class="col-md-auto">
                         <div class="social-icons">
-                            <span>We are social</span>
-                            <a href="#"><i data-feather="facebook"></i></a>
-                            <a href="#"><i data-feather="twitter"></i></a>
-                            <a href="#"><i data-feather="instagram"></i></a>
+                            <a href="{{ route('register') }}">Sign Up</a>
+                            <a href="{{ route('login') }}">Login</a>
+
                         </div>
                     </div>
                 </div>
@@ -102,28 +101,23 @@
                     <div class="close-nav"></div>
                     <ul class="navbar-nav navbar-onepage ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
+                            <a class="nav-link" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About Us</a>
+                            <a class="nav-link" href="/about-us">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle-mob" href="/cartel" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cartel <i class="icofont-thin-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="">Purchase a Dog</a></li>
+                                <li><a class="dropdown-item" href="">Find a breed</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#services">Our Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#gallery">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#team">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pricing">Pricing</a>
+                            <a class="nav-link" href="/contact-us">Contact Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#blog">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
 

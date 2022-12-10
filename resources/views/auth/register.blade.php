@@ -88,71 +88,32 @@
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbarCollapse" data-hover="dropdown">
-                    <a href="index.html" class="logo-small"><img src="assets/images/logo_white.svg" alt=""></a>
+                    <a href="index.html" class="logo-small"><img src="{{ asset('/assets/images/logo_white.svg')}}" alt=""></a>
                     <div class="close-nav"></div>
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle-mob" href="index.html" id="dropdown03" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home <i class="icofont-thin-down"></i></a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                                <li><a class="dropdown-item" href="index.html">Home Main</a></li>
-                                <li><a class="dropdown-item" href="home-shop.html">Home Shop</a></li>
-                                <li><a class="dropdown-item" href="home-vet.html">Home Vet</a></li>
-                                <li><a class="dropdown-item" href="home-intro.html">Home Intro</a></li>
-                                <li><a class="dropdown-item" href="home-classic.html">Home Classic</a></li>
-                                <li><a class="dropdown-item" href="index-onepage.html">Home One Page</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown megamenu">
-                            <a href="#" class="nav-link dropdown-toggle-mob" id="dropdown04" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages <i class="icofont-thin-down"></i></a>
-                            <div class="menu-back-div dropdown-menu megamenu-content" role="menu" aria-labelledby="dropdown04">
-                                <div class="megamenu-content-wrap">
-                                    <ul class="list-unstyled">
-                                        <li><a class="dropdown-item" href="about.html">About Us</a></li>
-                                        <li><a class="dropdown-item" href="our-team.html">Our Team</a></li>
-                                        <li><a class="dropdown-item" href="team-single.html">Team Single</a></li>
-                                        <li><a class="dropdown-item" href="our-faqs.html">Our Faq's</a></li>
-                                        <li><a class="dropdown-item" href="404.html">Error 404</a></li>
-                                    </ul>
-                                    <ul class="list-unstyled">
-                                        <li><a class="dropdown-item" href="our-services.html">Services</a></li>
-                                        <li><a class="dropdown-item" href="services-single.html">Services Single</a></li>
-                                        <li><a class="dropdown-item" href="shortcodes-element.html">Elements Page 1</a></li>
-                                        <li><a class="dropdown-item" href="shortcodes-element-alt.html">Elements Page 2</a></li>
-                                        <li><a class="dropdown-item" href="typography.html">Typography</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle-mob" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery <i class="icofont-thin-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="gallery-2-col.html">Galley 2 Col</a></li>
-                                <li><a class="dropdown-item" href="gallery-3-col.html">Galley 3 Col</a></li>
-                                <li><a class="dropdown-item" href="gallery-4-col.html">Galley 4 Col</a></li>
-                                <li><a class="dropdown-item" href="gallery-single.html">Galley Single</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle-mob" href="index.html" id="blog-menu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog <i class="icofont-thin-down"></i></a>
-                            <ul class="dropdown-menu" aria-labelledby="blog-menu">
-                                <li><a class="dropdown-item" href="blog-classic.html">Blog Classic</a></li>
-                                <li><a class="dropdown-item" href="blog-modern.html">Blog Modern</a></li>
-                                <li><a class="dropdown-item" href="blog-grid.html">Blog Grid</a></li>
-                                <li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle-mob" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop <i class="icofont-thin-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="shop-sidebar.html">Shop Sidebar</a></li>
-                                <li><a class="dropdown-item" href="shop-wide.html">Shop Wide</a></li>
-                                <li><a class="dropdown-item" href="shop-single.html">Shop Single</a></li>
-                                <li><a class="dropdown-item" href="shop-cart.html">Shopping Cart</a></li>
-                                <li><a class="dropdown-item" href="shop-checkout.html">Checkout</a></li>
-                            </ul>
+                    <ul class="navbar-nav navbar-onepage ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html">Contact</a>
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
 
@@ -161,67 +122,13 @@
         </nav>
 
     </header>
-    <article class="card mobile-offcanvas offcanvas-right" id="card_mobile">
-        <div class="shop-sidebar">
-            <div class="offcanvas-header">
-                <button class="btn btn-close"> <i data-feather="x-circle"></i> </button>
-            </div>
-            <h3 class="head">My Cart</h3>
-            <ul class="list-unstyled">
-                <li>
-                    <img src="assets/images/shop/sidebar_shop_1.jpg" alt="">
-                    <div>
-                        <h4><a href="shop-single.html">Lounger Dog Bed</a></h4>
-                        <h6>$85</h6>
-                    </div>
-                    <div class="delete-btn">
-                        <a href="#"><i class="icofont-close-line"></i></a>
-                    </div>
-                </li>
-                <li>
-                    <img src="assets/images/shop/sidebar_shop_2.jpg" alt="">
-                    <div>
-                        <h4><a href="shop-single.html">Sara's Doggie Treat</a></h4>
-                        <h6>$45</h6>
-                    </div>
-                    <div class="delete-btn">
-                        <a href="#"><i class="icofont-close-line"></i></a>
-                    </div>
-                </li>
-            </ul>
-            <div class="sidebar-subtotal">
-                <span>Subtotal</span>
-                <strong>$130</strong>
-            </div>
-            <div class="btn-holder">
-                <div class="col">
-                    <a href="shop-cart.html" class="btn-theme bordered bg-navy-blue btn-sm btn-block">View Cart</a>
-                </div>
-                <div class="col">
-                    <a href="shop-checkout.html" class="btn-theme bg-orange btn-shadow btn-sm btn-block">Checkout</a>
-                </div>
-            </div>
-        </div>
-    </article>
+    
 
     <section class="breadcrumbs-page-wrap">
         <div class="bg-navy-blue bg-fixed pos-rel breadcrumbs-page">
             <img class="ptt-png" src="assets/images/Dot-Shape.png" alt="png">
-            <div class="container">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
-                    </ol>
-                </nav>
-                <h1>Contact Us</h1>
-            </div>
         </div>
     </section>
-
-
-    
-
 
         <section class="wide-tb-100 pb-0">
             <div class="container">
@@ -240,14 +147,31 @@
                                         <div class="mb-3">
                                             <input type="text" name="name" id="name" class="form-control" placeholder="Enter Name">
                                         </div>
+                                        @error('name')
+                                        <span>
+                                            <strong class="text-danger">{{ $message }}</strong>
+                                        </span>
+                                        @enderror
                                     </div>
                                     <div class="col-md-6 mb-0">
+                                    <div class="mb-3">
                                         <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password">
+                                    </div>
+                                    @error('password')
+                                        <span>
+                                            <strong class="text-danger">{{ $message }}</strong>
+                                        </span>
+                                        @enderror
                                     </div>
                                     <div class="col-md-6 mb-0">
                                         <div class="mb-3">
-                                            <input type="text" name="email" id="email" class="form-control" placeholder="Your Email">
+                                            <input type="text" name="email" id="email" class="form-control" placeholder="Enter Email">
                                         </div>
+                                        @error('email')
+                                        <span>
+                                            <strong class="text-danger">{{ $message }}</strong>
+                                        </span>
+                                        @enderror
                                     </div>
                                     <div class="col-md-6 mb-0">
                                         <div class="mb-3">
@@ -266,7 +190,7 @@
 </div> -->
                                     </div>
                                     <div class="col-md-12 text-center">
-                                        <button type="submit" class="btn-theme bg-green mt-3 capusle">Submit</button>
+                                        <button type="submit" class="btn-theme bg-green mt-3 capusle">Register</button>
                                     </div>
                                 </div>
                             </form>
