@@ -37,6 +37,29 @@ Route::get('/details', function () {
     return view('guestViews.details');
 })->name('dog-details');
 
+// Create User Profile
+Route::get('/create-profile', function () {
+    return view('userViews.create-profile');
+})->name('create-profile');
+
+
+// View User Profile
+Route::get('/view-profile', function () {
+    return view('userViews.view-profile');
+})->name('profile');
+
+// Dog gallery
+Route::get('/dog-gallery', function () {
+    return view('userViews.dog-gallery');
+})->name('dog-gallery');
+
+// Upload a Dog
+Route::get('/upload-a-dog', function () {
+    return view('userViews.upload-a-dog');
+})->name('upload-a-dog');
+
+
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
