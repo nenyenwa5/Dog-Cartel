@@ -57,10 +57,10 @@
                     </div>
                     <div class="col-md-auto">
                         <div class="social-icons">
-                            <span>We are social</span>
-                            <a href="#"><i data-feather="facebook"></i></a>
-                            <a href="#"><i data-feather="twitter"></i></a>
-                            <a href="#"><i data-feather="instagram"></i></a>
+                            
+                            <a href="{{ route('register') }}">Sign Up</a>
+                            <a href="{{ route('login') }}">Login</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -88,36 +88,31 @@
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbarCollapse" data-hover="dropdown">
-                    <a href="index.html" class="logo-small"><img src="{{ asset('/assets/images/logo_white.svg')}}" alt=""></a>
-                    <div class="close-nav"></div>
-                    <ul class="navbar-nav navbar-onepage ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Our Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#gallery">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#team">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pricing">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#blog">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
+<a href="index.html" class="logo-small"><img src="assets/images/logo_white.svg" alt=""></a>
+<div class="close-nav"></div>
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a class="nav-link" href="/">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/about-us">About Us</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle-mob" href="/cartel" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cartel <i class="icofont-thin-down"></i></a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="">Purchase a Dog</a></li>
+<li><a class="dropdown-item" href="">Find a breed</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="">Blog</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/contact-us">Contact</a>
+</li>
+</ul>
 
-                </div>
+</div>
             </div>
         </nav>
 
@@ -198,7 +193,7 @@
         </section>
 
 
-        <section class="wide-tb-100 bg-light-gray clients-rounded-wrap need-help-topspace">
+        <!-- <section class="wide-tb-100 bg-light-gray clients-rounded-wrap need-help-topspace">
             <div class="container pos-rel">
                 <div class="contact-map-img">
                     <img src="assets/images/World-Map-PNG-Picture.png" alt="">
@@ -234,37 +229,11 @@
 
                 </div>
             </div>
-        </section>
+        </section> -->
 
     </main>
 
-    <div class="container footer-top-callout">
-        <div class="row">
-
-            <div class="col-sm-12">
-                <div class="callout-style-side-img d-lg-flex align-items-center">
-                    <div class="img-callout">
-                        <img src="assets/images/callout_side_img.jpg" alt="">
-                    </div>
-                    <div class="text-callout">
-                        <div class="d-md-flex align-items-center">
-                            <div class="icon">
-                                <i data-feather="headphones"></i>
-                            </div>
-                            <div class="heading">
-                                <h3>Have Questions? Call Us <span class="txt-green">+1 (800) 123 456 789</span>
-                                </h3>
-                                <div>In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat,
-                                    nec elementum ipsum convall.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <footer class="wide-tb-150 bg-navy-blue pb-0">
+    <footer class="wide-tb-150 bg-navy-blue pb-0" style="margin-top:250px">
         <div class="container">
             <div class="row wide-tb-50 pt-0 align-items-center">
                 <div class="col-md-6 mb-0">
