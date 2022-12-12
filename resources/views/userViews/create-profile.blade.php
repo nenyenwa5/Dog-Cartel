@@ -4,116 +4,129 @@
 
 <div class="content-body">
 
-            <div class="row page-titles mx-0">
-                <div class="col p-md-0">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item active"><a href="/home">Home</a></li>
-                    </ol>
-                </div>
-            </div>
-            <!-- row -->
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <form action="#" id="step-form-horizontal" class="step-form-horizontal">
-                            <div>
-                                <h4>Account Details</h4>
-                                <section>
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input type="text" name="username" class="form-control" placeholder="Username" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input type="email" name="email" class="form-control" placeholder="Email" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input type="password" name="Password" class="form-control" placeholder="Password" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input type="password" name="confirmPassword" class="form-control" placeholder="Confirm Password" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <h4>Your Address</h4>
-                                <section>
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input type="text" name="firstName" class="form-control" placeholder="First Name" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input type="text" name="lastName" class="form-control" placeholder="Last Name" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="form-group">
-                                                <input type="text" name="address" class="form-control" placeholder="Address" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input type="text" name="city" class="form-control" placeholder="City" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input type="text" name="zip" class="form-control" placeholder="ZIP Code" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <h4>Billing Details</h4>
-                                <section>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="form-group">
-                                                <input class="form-control" type="text" name="creditCard" placeholder="Credit Card Number">
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="form-group">
-                                                <input class="form-control" type="text" name="date" placeholder="Expiration Date">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <input class="form-control" type="text" name="owner" placeholder="Credit Card Owner">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <h4>Confirmation</h4>
-                                <section>
-                                    <div class="row h-100">
-                                        <div class="col-12 h-100 d-flex flex-column justify-content-center align-items-center">
-                                            <h2>You have submitted form successfully!</h2>
-                                            <p>Thank you very much for you information. we will procceed accordingly.</p>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <!-- #/ container -->
+    <div class="row page-titles mx-0">
+        <div class="col p-md-0">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active"><a href="/home">Home</a></li>
+            </ol>
         </div>
-        <!--**********************************
+    </div>
+    <!-- row -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <form action="#" id="step-form-horizontal" class="step-form-horizontal">
+                    <div>
+                        <h4>Personal Details</h4>
+                        <section>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" name="firstName" class="form-control" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" name="lastName" class="form-control" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" name="address" class="form-control" placeholder="Address">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" name="phone" class="form-control" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <h4>More Details</h4>
+                        <section>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <textarea name="about-me" class="form-control" rows="4" placeholder="About Me"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" name="city" class="form-control" placeholder="Country">
+                                        <select type="text" id="country" aria-label="Default select example" name="currency_sign">
+          
+                                        <label class="ml-3 mt-2" id="defaultCountry" class="mr-5">Select Default Country</label>
+                                        </select>
+                                
+                                        <ul class="mdc-list countries">
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" name="city" class="form-control" placeholder="State">
+                                        <select type="text" class="form-select" id="state" aria-label="Default select example" name="currency_sign">
+                                            <label class="ml-3 mt-2" id="defaultState" class="mr-5">Select Default State</label>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- #/ container -->
+</div>
+<!--**********************************
             Content body end
         ***********************************-->
-        
-        
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    $.getJSON('{{ asset("countries.json") }}').then(jsonCountries => {
+        const countries = jsonCountries.countries
+        const countryNameArray = countries.map(item => item.country);
+
+        const populateStates = (e) => {
+            const countryName = e.target.getAttribute("data-value");
+            console.log(countryName)
+            country = countries.filter(country => country.country === countryName)[0]
+            stateLists = document.getElementsByClassName('states');
+            for (stateList of stateLists) {
+                stateList.innerHTML = '';
+                for (state of country.states) {
+                    let stateItem = document.createElement('li');
+                    stateItem.className = "mdc-list-item stateItem";
+                    stateItem.setAttribute("data-value", state);
+                    stateItem.innerText = state;
+                    stateList.appendChild(stateItem);
+                }
+            }
+        }
+        countryLists = document.getElementsByClassName('countries');
+        for (countryList of countryLists) {
+            for (countryName of countryNameArray) {
+                let countryItem = document.createElement('li');
+                countryItem.className = "mdc-list-item countryItem";
+                countryItem.setAttribute("data-value", countryName);
+                countryItem.innerText = countryName;
+                countryItem.addEventListener('click', populateStates);
+                countryList.appendChild(countryItem);
+               
+            }
+        }
+
+    });
+</script>
+
+
 
 @endsection
