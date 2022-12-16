@@ -54,15 +54,27 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="d-flex mt-3">
+                                    <h5>Upload a dog</h5>
+                                    <div class="btn btn-sm btn-primary btn-rounded ml-4">
+                                        <label class="form-label text-white m-1" for="customFile1">Choose file</label>
+                                        <input type="file" class="form-control d-none" id="customFile1" />
+                                    </div>
+                                </div>
+                                <div class="input-group mt-3">
+                                    <input type="file" class="form-control" id="inputGroupFile02">
+                                    <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                                </div>
                         </div>
-                        <button class="btn login-form__btn submit w-100">Submit</button>
-                        </form>
-
                     </div>
+                    <button class="btn login-form__btn submit w-100">Submit</button>
+                    </form>
+
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 </div>
 </div>

@@ -53,27 +53,17 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input type="text" name="city" class="form-control" placeholder="Country">
-                                        <select type="text" id="country" aria-label="Default select example" name="currency_sign">
-          
-                                        <label class="ml-3 mt-2" id="defaultCountry" class="mr-5">Select Default Country</label>
-                                        </select>
-                                
-                                        <ul class="mdc-list countries">
-                                        </ul>
+                                        <input type="text" name="country" class="form-control" placeholder="Country">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input type="text" name="city" class="form-control" placeholder="State">
-                                        <select type="text" class="form-select" id="state" aria-label="Default select example" name="currency_sign">
-                                            <label class="ml-3 mt-2" id="defaultState" class="mr-5">Select Default State</label>
-                                        </select>
+                                    <input type="email" name="email" class="form-control" placeholder="Email">  
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input type="email" name="email" class="form-control" placeholder="Email">
+                                        <input type="text" name="state" class="form-control" placeholder="State">
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +80,7 @@
             Content body end
         ***********************************-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
+<!-- <script>
     $.getJSON('{{ asset("countries.json") }}').then(jsonCountries => {
         const countries = jsonCountries.countries
         const countryNameArray = countries.map(item => item.country);
@@ -125,7 +115,7 @@
         }
 
     });
-</script>
+</script> -->
 
 
 
