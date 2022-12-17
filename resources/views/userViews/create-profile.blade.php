@@ -58,17 +58,22 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Email">  
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
                                         <input type="text" name="state" class="form-control" placeholder="State">
                                     </div>
                                 </div>
+                                <div class="col-lg-6">
+                                <input type="file" name="photo" class="form-control" id="inputGroupFile02">
+                                    <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                                    </div>
+                                </div>
                             </div>
+
                         </section>
 
+
+                    </div>
+                    <div>
+                        <button class="btn btn-sm login-form__btn submit w-100">Submit</button>
                     </div>
                 </form>
             </div>
@@ -79,7 +84,7 @@
 <!--**********************************
             Content body end
         ***********************************-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- <script>
     $.getJSON('{{ asset("countries.json") }}').then(jsonCountries => {
         const countries = jsonCountries.countries

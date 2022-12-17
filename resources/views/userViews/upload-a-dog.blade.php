@@ -16,13 +16,17 @@
 
                             <form class="mt-5 mb-5 login-input">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Name" required>
+                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Gender" required>
+                                    <label><strong>Gender</strong></label>
+                                    <select class="form-control" id="sel1">
+                                        <option>Female</option>
+                                        <option>Male</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Age" required>
+                                    <input type="text" name="age" class="form-control" placeholder="Age" required>
                                 </div>
                                 <div class="form-group">
                                     <label><strong>Select Specie</strong></label>

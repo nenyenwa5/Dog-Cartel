@@ -57,10 +57,10 @@
                     </div>
                     <div class="col-md-auto">
                         <div class="social-icons">
-                            
+
                             <a href="{{ route('register') }}">Sign Up</a>
                             <a href="{{ route('login') }}">Login</a>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -88,36 +88,36 @@
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbarCollapse" data-hover="dropdown">
-<a href="index.html" class="logo-small"><img src="assets/images/logo_white.svg" alt=""></a>
-<div class="close-nav"></div>
-<ul class="navbar-nav ms-auto">
-<li class="nav-item">
-<a class="nav-link" href="/">Home</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/about-us">About Us</a>
-</li>
-<li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle-mob" href="/cartel" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cartel <i class="icofont-thin-down"></i></a>
-<ul class="dropdown-menu">
-<li><a class="dropdown-item" href="">Purchase a Dog</a></li>
-<li><a class="dropdown-item" href="">Find a breed</a></li>
-</ul>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="">Blog</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="/contact-us">Contact</a>
-</li>
-</ul>
+                    <a href="index.html" class="logo-small"><img src="assets/images/logo_white.svg" alt=""></a>
+                    <div class="close-nav"></div>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about-us">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle-mob" href="/cartel" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cartel <i class="icofont-thin-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="">Purchase a Dog</a></li>
+                                <li><a class="dropdown-item" href="">Find a breed</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact-us">Contact</a>
+                        </li>
+                    </ul>
 
-</div>
+                </div>
             </div>
         </nav>
 
     </header>
-    
+
 
     <section class="breadcrumbs-page-wrap">
         <div class="bg-navy-blue bg-fixed pos-rel breadcrumbs-page">
@@ -135,65 +135,67 @@
     </section>
 
 
-    
 
 
-        <section class="wide-tb-100 pb-0">
-            <div class="container">
-                <h1 class="heading-main center">
-                    <small>Welcome Patner <i class="pethund_repeat_grid"></i></small>
-                    <span>Login</span> 
-                </h1>
-                <div class="row">
-                    <div class="col-lg-8 col-md-12 mx-auto">
-                        <div class="need-help">
-                            <div id="sucessmessage"></div>
-                            <form action="/register" method="post" id="contact_form" novalidate="novalidate">
-                                @csrf
-                                <div class="row">
-                                    <div class="col-md-6 mb-0">
-                                        <div class="mb-3">
+
+    <section class="wide-tb-100 pb-0">
+        <div class="container">
+            <h1 class="heading-main center">
+                <small>Welcome Patner <i class="pethund_repeat_grid"></i></small>
+                <span>Login</span>
+            </h1>
+            <div class="row">
+                <div class="col-lg-8 col-md-12 mx-auto">
+                    <div class="need-help">
+                        <div id="sucessmessage"></div>
+                        <form method="POST" action="{{ route('login') }}">
+                            @csrf
+                            <div class="row">
+                                <div class="col-md-6 mb-0">
+                                    <div class="mb-3">
                                         <input type="text" name="email" id="email" class="form-control" placeholder="Enter Email">
-                                        </div>
                                     </div>
-                                    <div class="col-md-6 mb-0">
-                                        <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password">
-                                    </div>
-                                        
-                                        @error('password')
-                                        <span>
-                                            <strong class="text-danger">{{ $message }}</strong>
-                                        </span>
-                                        @enderror
-                                    </div>
-                                    <div class="col-md-12 mb-0">
-                                    <div class="form-check">
+                                </div>
+                                <div class="col-md-6 mb-0">
+                                    <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password">
+                                </div>
+
+                                @error('password')
+                                <span>
+                                    <strong class="text-danger">{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                            <div class="col-md-12 mb-0">
+                                <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                     <label class="form-check-label" for="remember">
                                         {{ __('Remember Me') }}
                                     </label>
-                                    </div>
-                                    </div>
-                                    <div class="col-md-12 text-center">
-                                        <button type="submit" class="btn-theme bg-green mt-3 capusle">Submit</button>
-                                        @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
-                                    </div>
-                                   
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-caret-square-right"></i> {{ __('Login') }}
+                                </button>
+                                @if (Route::has('password.request'))
+                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    {{ __('Forgot Your Password?') }}
+                                </a>
+                                @endif
+                            </div>
+
                     </div>
+                    </form>
                 </div>
             </div>
-        </section>
+        </div>
+        </div>
+    </section>
 
 
-        <!-- <section class="wide-tb-100 bg-light-gray clients-rounded-wrap need-help-topspace">
+    <!-- <section class="wide-tb-100 bg-light-gray clients-rounded-wrap need-help-topspace">
             <div class="container pos-rel">
                 <div class="contact-map-img">
                     <img src="assets/images/World-Map-PNG-Picture.png" alt="">

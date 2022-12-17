@@ -61,6 +61,11 @@ Route::get('/upload-a-dog', function () {
     return view('userViews.upload-a-dog');
 })->name('upload-a-dog');
 
+// Find a Cross
+Route::get('/find-a-cross', function () {
+    return view('userViews.find-a-cross');
+})->name('find-a-cross');
+
 
 
 Auth::routes();

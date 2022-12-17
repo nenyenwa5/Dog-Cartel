@@ -267,7 +267,7 @@
                         <ul aria-expanded="false">
                             <li><a href="./dog-gallery">Dog Gallery</a></li>
                             <li><a href="./upload-a-dog">Upload a Dog</a></li>
-                            <li><a href="">Find a Cross</a></li>
+                            <li><a href="/find-a-cross">Find a Cross</a></li>
                         </ul>
                     </li>
                    
