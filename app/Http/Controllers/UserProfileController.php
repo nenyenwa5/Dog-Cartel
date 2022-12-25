@@ -6,6 +6,7 @@ use App\Models\UserProfile;
 use App\Http\Requests\StoreUserProfileRequest;
 use App\Http\Requests\UpdateUserProfileRequest;
 
+
 class UserProfileController extends Controller
 {
     /**
@@ -25,7 +26,8 @@ class UserProfileController extends Controller
      */
     public function create()
     {
-        //
+       
+        return view('userViews.create-profile');
     }
 
     /**
@@ -36,7 +38,35 @@ class UserProfileController extends Controller
      */
     public function store(StoreUserProfileRequest $request)
     {
-        //
+        dd('nenye');
+        $request->validate([
+            'firstname' => 'required|min:3',
+            'lastname' => 'required|min:5',
+            'address' => 'required',
+            'phone' => 'required',
+            'country' => 'required',
+            'state' => 'required',
+        ]);
+        $userProfile = new UserProfile;
+        $userProfile->firstname = $request->input('firstname');
+        $userProfile->lastname = $request->input('lastname');
+        $userProfile ->address = $request->input('address');
+        $userProfile->phone = $request->input('phone');
+        $userProfile->about_me = $request->input('about_me');
+        $userProfile->country = $request->input('country');
+        $userProfile->state = $request->input('state');
+        $userProfile->user_id = auth()->user()->id;
+            if($request->hasFile('photo')){
+                $file = $request->file('photo');
+                $extention = $file->getClientOriginalExtension();
+                $filename = time().'.'.$extention;
+                $file->move('uploads/image/', $filename);
+                $userProfile->photo = $filename;
+            }      
+        
+        $userProfile->save();
+        return redirect()->back()->with('status', 'Profile created successfully');
+        
     }
 
     /**

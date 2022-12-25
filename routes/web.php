@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,11 +41,15 @@ Route::get('/details', function () {
     return view('guestViews.details');
 })->name('dog-details');
 
-// Create User Profile
-Route::get('/create-profile', function () {
-    return view('userViews.create-profile');
-})->name('create-profile');
+// // Create User Profile
+// Route::get('/create-profile', function () {
+//     return view('userViews.create-profile');
+// })->name('create-profile');
 
+ Route::get('/userProfile', [UserProfileController::class, 'create']);
+
+ Route::post('/userProfile', [UserProfileController::class, 'store']);
+// Route::resource('/user_profile', UserProfileController::class);
 
 // View User Profile
 Route::get('/view-profile', function () {

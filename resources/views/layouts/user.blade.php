@@ -256,7 +256,7 @@
                             <i class="icon-speedometer menu-icon"></i><span class="nav-text">Profile</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="/create-profile">Create Profile</a></li>
+                            <li><a href="./userProfile">Create Profile</a></li>
                             <li><a href="./view-profile">View Profile</a></li>
                         </ul>
                     </li>

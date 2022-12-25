@@ -16,8 +16,12 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <form action="#" id="step-form-horizontal" class="step-form-horizontal">
-                    <div>
+                @if(session('status'))
+                <h6 class="alert alert-success">{{ session('status') }}</h6>
+                @endif
+                <form action="/createProfile" method="post" class="step-form-horizontal" enctype="multipart/form-data">
+                    @csrf    
+                <div>
                         <h4>Personal Details</h4>
                         <section>
                             <div class="row">
@@ -38,7 +42,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input type="text" name="phone" class="form-control" placeholder="Phone Number">
+                                        <input type="phone" name="phone" class="form-control" placeholder="Phone Number">
                                     </div>
                                 </div>
                             </div>
@@ -63,7 +67,6 @@
                                 </div>
                                 <div class="col-lg-6">
                                 <input type="file" name="photo" class="form-control" id="inputGroupFile02">
-                                    <label class="input-group-text" for="inputGroupFile02">Upload</label>
                                     </div>
                                 </div>
                             </div>
@@ -73,7 +76,7 @@
 
                     </div>
                     <div>
-                        <button class="btn btn-sm login-form__btn submit w-100">Submit</button>
+                        <button type="submit" class="btn btn-sm login-form__btn submit w-100">Submit</button>
                     </div>
                 </form>
             </div>
