@@ -19,7 +19,7 @@
                 @if(session('status'))
                 <h6 class="alert alert-success">{{ session('status') }}</h6>
                 @endif
-                <form action="/createProfile" method="post" class="step-form-horizontal" enctype="multipart/form-data">
+                <form action="/userProfile" method="post" class="step-form-horizontal" enctype="multipart/form-data">
                     @csrf    
                 <div>
                         <h4>Personal Details</h4>
@@ -27,12 +27,12 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input type="text" name="firstName" class="form-control" placeholder="First Name">
+                                        <input type="text" name="firstname" class="form-control" placeholder="First Name">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input type="text" name="lastName" class="form-control" placeholder="Last Name">
+                                        <input type="text" name="lastname" class="form-control" placeholder="Last Name">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -66,7 +66,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                <input type="file" name="photo" class="form-control" id="inputGroupFile02">
+                                <input type="file" name="photo" class="form-control">
                                     </div>
                                 </div>
                             </div>

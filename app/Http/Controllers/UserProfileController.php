@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use App\Models\UserProfile;
 use App\Http\Requests\StoreUserProfileRequest;
 use App\Http\Requests\UpdateUserProfileRequest;
@@ -16,7 +17,8 @@ class UserProfileController extends Controller
      */
     public function index()
     {
-        //
+        
+        return view('userViews.view-profile');
     }
 
     /**
@@ -36,38 +38,43 @@ class UserProfileController extends Controller
      * @param  \App\Http\Requests\StoreUserProfileRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreUserProfileRequest $request)
+    public function store(Request $request)
     {
-        dd('nenye');
-        $request->validate([
-            'firstname' => 'required|min:3',
-            'lastname' => 'required|min:5',
-            'address' => 'required',
-            'phone' => 'required',
-            'country' => 'required',
-            'state' => 'required',
+        // $request->validate([
+        //     'photo' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        // ]);
+            dd($request);
+        $userProfile = new UserProfile([
+            'firstname' => $request['firstname'],
+            'lastname' => $request['lastname'],
+            'address' => $request['address'],
+            'phone' => $request['phone'],
+            'about_me' => $request['about_me'],
+            'country' => $request['country'],
+            'state' => $request['state'],
+            'user_id' => auth()->user()->id,
+            
         ]);
-        $userProfile = new UserProfile;
-        $userProfile->firstname = $request->input('firstname');
-        $userProfile->lastname = $request->input('lastname');
-        $userProfile ->address = $request->input('address');
-        $userProfile->phone = $request->input('phone');
-        $userProfile->about_me = $request->input('about_me');
-        $userProfile->country = $request->input('country');
-        $userProfile->state = $request->input('state');
-        $userProfile->user_id = auth()->user()->id;
-            if($request->hasFile('photo')){
-                $file = $request->file('photo');
-                $extention = $file->getClientOriginalExtension();
-                $filename = time().'.'.$extention;
-                $file->move('uploads/image/', $filename);
-                $userProfile->photo = $filename;
-            }      
-        
+       
+        if($request->hasFile('photo')){
+                
+           
+           
+            // i tried this    
+            // $file = $request->file('photo');
+                // $extention = $file->getClientOriginalExtension();
+                // $filename = time().'.'.$extention;
+                // $file->move('uploads/image/', $filename);
+                // $userProfile->photo = $filename;
+                
+                
+                //i tried this too
+                // $imageName = time().'.'.$request->image->photo->extension();
+                // $request->photo->move('uploads/image/', $imageName);
         $userProfile->save();
-        return redirect()->back()->with('status', 'Profile created successfully');
-        
+        return $this->index();
     }
+}
 
     /**
      * Display the specified resource.

@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::resource('/userProfile', UserProfileController::class);
+
 // Welcome Page
 Route::get('/', function () {
     return view('guestViews.welcome');
@@ -46,10 +48,10 @@ Route::get('/details', function () {
 //     return view('userViews.create-profile');
 // })->name('create-profile');
 
- Route::get('/userProfile', [UserProfileController::class, 'create']);
+//  Route::get('/userProfile', [UserProfileController::class, 'create']);
 
- Route::post('/userProfile', [UserProfileController::class, 'store']);
-// Route::resource('/user_profile', UserProfileController::class);
+//  Route::post('/userProfile', [UserProfileController::class, 'store']);
+
 
 // View User Profile
 Route::get('/view-profile', function () {

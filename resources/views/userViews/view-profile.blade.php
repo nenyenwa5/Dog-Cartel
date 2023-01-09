@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="content-body">
+<!-- <div class="content-body">
 
 <div class="row page-titles mx-0">
     <div class="col p-md-0">
@@ -11,7 +11,7 @@
         </ol>
     </div>
 </div>
-<!-- row -->
+
 
 <div class="container-fluid">
     <div class="row">
@@ -157,9 +157,14 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- #/ container -->
+<!-- </div> -->
+
+<div>
+    <h1>Profile saved</h1>
 </div>
+
 <!--**********************************
 Content body end
 ***********************************-->
